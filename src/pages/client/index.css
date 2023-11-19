@@ -1,0 +1,160 @@
+.image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .post-scroll {
+    transform: translateY(-100%);
+  }
+  /* CSS cho phân trang */
+/* CSS cho phân trang */
+/* CSS cho phân trang */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 70px; /* Điều chỉnh độ rộng của phân trang */
+}
+
+/* Ẩn ngoặc trống */
+.pagination .break {
+  display: none;
+}
+
+.pagination li {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination li.active {
+  background-color: #FD661F; /* Đổi màu nền cho trang hiện tại */
+  color: #fff; /* Đổi màu chữ cho trang hiện tại */
+}
+
+/* Tùy chỉnh các trang 1 và 2 */
+.pagination li:nth-child(1),
+.pagination li:nth-child(2) {
+  font-weight: bold; /* Làm cho số 1 và 2 in đậm */
+  font-size: 16px; /* Điều chỉnh kích thước của số 1 và 2 */
+}
+
+.pagination li:hover {
+  background-color: #eee; /* Đổi màu nền khi di chuột qua */
+  color: #333; /* Đổi màu chữ khi di chuột qua */
+}
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1000; /* Đảm bảo nó ở trên tất cả các phần khác */
+}
+
+.loading-overlay p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FD661F;
+}
+.image-container {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation: imageSlide 5s linear infinite; /* Chuyển đổi hình ảnh sau mỗi 5 giây */
+}
+
+@keyframes imageSlide {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  20% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}  
+
+.border-bicolor {
+  width: 50px; /* Điều chỉnh kích thước */
+  height: 50px;
+  border: 3px solid rgb(209, 161, 30); /* Đường viền màu trong suốt */
+  position: relative;
+  border-radius: 50%; /* Làm cho nó trở thành hình tròn */
+}
+
+
+.form-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.borderless-input {
+  border: none;
+  outline: none;
+}
+
+/* CSS */
+.comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.comment-item img {
+  width: 50px; /* Điều chỉnh kích thước ảnh */
+  height: 50px;
+  border-radius: 50%; /* Bo tròn ảnh */
+  margin-right: 10px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-name {
+  font-weight: bold;
+}

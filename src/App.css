@@ -1,0 +1,56 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    overflow: hidden;
+    padding-top: 30px;
+    margin-left: 2100px;
+  }
+  
+  .running-text {
+    font-style: oblique;
+    font-size: 30px;
+    color: #0B7077;
+    white-space: nowrap;
+    position: absolute;
+    animation: moveText 15s linear infinite;
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    padding: 8px 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    z-index: 1; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+  }
+  
+  .prev-button {
+    left: 0;
+    transform: translateX(-50%); /* Đặt nút "Previous" ra nửa phần trái */
+  }
+  
+  .next-button {
+    right: 0;
+    transform: translateX(50%); /* Đặt nút "Next" ra nửa phần phải */
+  }
+.slide img {
+  border-radius: 15px;
+}

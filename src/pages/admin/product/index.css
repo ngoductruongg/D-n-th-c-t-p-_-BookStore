@@ -1,0 +1,23 @@
+.checkbox-style{
+    background-color: red;
+    border-radius: 1px;
+}
+.columnss-cell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 420;
+}
+.columnss-cell:hover {
+    -webkit-line-clamp: unset; /* Bỏ giới hạn dòng khi hover */
+  }
+
+ .name-style{
+    width: 205px;
+    font-size: smaller;
+    color: brown;
+    font-weight: bold;
+ } 
+
