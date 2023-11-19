@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-.border-gradient-hover {
-    border-image: linear-gradient(135deg, #48c6ef, #6f86d6);
-    border-image-slice: 1;
-  }
